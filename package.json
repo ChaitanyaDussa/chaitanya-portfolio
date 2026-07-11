@@ -1,0 +1,9 @@
+{
+  "name": "chaitanya-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio site with Vercel serverless API + Postgres-backed content that syncs across every browser.",
+  "dependencies": {
+    "pg": "^8.11.5"
+  }
+}

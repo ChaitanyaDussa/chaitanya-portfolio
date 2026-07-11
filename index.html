@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.className += ' js';</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chaitanya Dussa — Full-Stack Developer</title>
+<link rel="icon" type="image/png" href="avatar.png">
+<meta name="theme-color" content="#4fd8ff">
+<meta name="description" content="Portfolio of Chaitanya Dussa, full-stack developer working across React, Node.js, and generative AI tooling.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grid-bg"></div>
+<div class="glow-orb one"></div>
+<div class="glow-orb two"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">
+      <img src="avatar.png" alt="Chaitanya Dussa" id="navAvatarImg">
+    </a>
+    <nav class="links">
+      <a href="#education"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.5 2.5 3 6 3s6-1.5 6-3v-5"/><path d="M22 10v6"/></svg></span>Education</a>
+      <a href="#skills"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 18-6-6 6-6"/><path d="m16 6 6 6-6 6"/></svg></span>Skills</a>
+      <a href="#projects"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/></svg></span>Projects</a>
+      <a href="#certifications"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M9 13.5 7 22l5-3 5 3-2-8.5"/></svg></span>Certifications</a>
+      <a href="#videos"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="14" height="14" rx="2"/><path d="m16 9 6-4v14l-6-4"/></svg></span>Videos</a>
+      <a href="#contact"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg></span>Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="icon-btn" href="https://github.com/ChaitanyaDussa" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.8 5.4.8 11.6c0 4.9 3.2 9.1 7.6 10.6.6.1.8-.2.8-.6v-2.2c-3.1.7-3.7-1.3-3.7-1.3-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.6.1-.6 1.1.1 1.7 1.1 1.7 1.1 1 1.7 2.6 1.2 3.2.9.1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.3-5.1-5.5 0-1.2.4-2.2 1.1-3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.1 1.1.9-.2 1.9-.4 2.9-.4s2 .1 2.9.4c2.1-1.4 3.1-1.1 3.1-1.1.6 1.6.2 2.8.1 3.1.7.8 1.1 1.8 1.1 3 0 4.3-2.6 5.2-5.1 5.5.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.4-1.5 7.6-5.7 7.6-10.6C23.2 5.4 18.3.5 12 .5z"/></svg>
+      </a>
+      <a class="icon-btn" href="https://www.linkedin.com/in/chaitanya-dussa-fullstackdevelopment/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4A2 2 0 1 1 5.3 3.4a2 2 0 0 1 0 4zM7 20.4H3.6V9H7v11.4z"/></svg>
+      </a>
+      <a class="btn ghost" href="https://drive.google.com/file/d/1Mr5mkM8v876UZic6V3QVlx6pjNPks_er/view?usp=sharing" target="_blank" rel="noopener" id="navResumeLink">Resume ↗</a>
+    </div>
+    <button class="menu-toggle" aria-label="Menu" onclick="document.querySelector('nav.links').classList.toggle('mobile-open')">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero wrap">
+    <div class="hero-inner">
+      <div class="reveal is-visible">
+        <div class="eyebrow" id="heroEyebrow">Available for opportunities</div>
+        <h1><span id="heroName">Chaitanya Dussa</span><br><span class="accent" id="heroTagline">builds full-stack products.</span></h1>
+        <p class="lead" id="heroLead">I'm a full-stack developer working across React, Node.js, and Express, with hands-on REST API and database experience. Lately I've been folding generative AI, prompt engineering, and workflow automation into how I ship — alongside no-code tooling where it gets the job done faster.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="https://drive.google.com/file/d/1Mr5mkM8v876UZic6V3QVlx6pjNPks_er/view?usp=sharing" target="_blank" rel="noopener" id="heroResumeLink">View Resume</a>
+        </div>
+        <div class="hero-meta">
+          <div><b>Andhra Pradesh, IN</b>Location</div>
+          <div><b>B.Tech CSE — 2027</b>Education</div>
+          <div><b>8.0 CGPA</b>Standing</div>
+        </div>
+        <button class="section-manage" data-open-admin="about" type="button" style="margin-top:18px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px;"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+          Edit About
+        </button>
+
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span></span><span></span><span></span>
+            <small>chaitanya@portfolio — zsh</small>
+            <button class="section-manage terminal-manage-btn" data-open-admin="terminal" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:11px;height:11px;"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+              Edit Terminal
+            </button>
+          </div>
+          <div class="terminal-body" id="terminalBody"></div>
+        </div>
+      </div>
+
+      <div class="avatar-col reveal is-visible">
+        <div class="avatar-wrap">
+          <!-- Subtitle bar: appears above avatar, cycles automatically -->
+          <div class="intro-subtitle" id="introSubtitle" aria-live="polite"></div>
+
+          <div class="avatar-ring outer"></div>
+          <div class="avatar-ring"></div>
+          <div class="avatar-frame" id="avatarFrame">
+            <img src="avatar.png" alt="Chaitanya Dussa avatar illustration" id="heroAvatarImg">
+            <div class="scan-line"></div>
+          </div>
+          <div class="chip-orbit c1">React.js</div>
+          <div class="chip-orbit c2">Python</div>
+          <div class="chip-orbit c3">AWS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="block wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Background</div>
+      <h2><span class="head-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.5 2.5 3 6 3s6-1.5 6-3v-5"/><path d="M22 10v6"/></svg></span>Education</h2>
+      <button class="section-manage" data-open-admin="education" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+        Manage Education
+      </button>
+    </div>
+    <div class="timeline" id="eduTimeline"></div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="block wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Stack</div>
+      <h2><span class="head-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 18-6-6 6-6"/><path d="m16 6 6 6-6 6"/></svg></span>Skills &amp; tools</h2>
+      <p>Languages and frameworks I build with day to day, plus the cloud, AI, and workflow tooling I'm actively layering on.</p>
+      <button class="section-manage" data-open-admin="skills" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+        Manage Skills
+      </button>
+    </div>
+    <div class="scroll-box" id="skillsScrollBox">
+      <div class="skill-groups" id="skillGroups"></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="block wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Selected work</div>
+      <h2><span class="head-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/></svg></span>Projects</h2>
+      <p>Browse by category. New ones get added as I ship them.</p>
+      <button class="section-manage" data-open-admin="projects" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+        Manage Projects
+      </button>
+    </div>
+    <div class="cat-tabs" id="catTabs"></div>
+    <div class="scroll-box" id="projectsScrollBox">
+      <div class="projects" id="projectsList"></div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="block wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Verified</div>
+      <h2><span class="head-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M9 13.5 7 22l5-3 5 3-2-8.5"/></svg></span>Certifications</h2>
+      <p>Each badge links out to the original certificate verification page.</p>
+      <button class="section-manage" data-open-admin="certs" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+        Manage Certifications
+      </button>
+    </div>
+    <div class="scroll-box" id="certsScrollBox">
+      <div class="cert-grid" id="certGrid"></div>
+    </div>
+  </section>
+
+  <!-- VIDEOS -->
+  <section id="videos" class="block wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Content</div>
+      <h2><span class="head-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="14" height="14" rx="2"/><path d="m16 9 6-4v14l-6-4"/></svg></span>YouTube</h2>
+      <p>Videos I publish will show up here.</p>
+      <button class="section-manage" data-open-admin="videos" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+        Manage Videos
+      </button>
+    </div>
+    <div class="scroll-box" id="videosScrollBox">
+      <div id="videoGrid">
+        <div class="video-empty reveal">
+          <div class="play-ico">▶</div>
+          <p>Nothing uploaded yet — check back soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GET IN TOUCH -->
+  <section id="contact" class="block wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Get in touch</div>
+      <h2><span class="head-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg></span>Get in Touch</h2>
+      <p>The quickest ways to reach me or see what I'm building.</p>
+    </div>
+    <div class="contact-links">
+      <a class="contact-card reveal" href="https://leetcode.com/u/ChaitanyaDussa/" target="_blank" rel="noopener" id="giLeetcode">
+        <div class="contact-ico">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l-4-4 4-4M10 18l-4-4 4-4"/></svg>
+        </div>
+        <div>
+          <h4>LeetCode</h4>
+          <p>u/ChaitanyaDussa</p>
+        </div>
+        <span class="contact-arrow">↗</span>
+      </a>
+      <a class="contact-card reveal" href="https://www.linkedin.com/in/chaitanya-dussa-fullstackdevelopment/" target="_blank" rel="noopener" id="giLinkedin">
+        <div class="contact-ico">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4A2 2 0 1 1 5.3 3.4a2 2 0 0 1 0 4zM7 20.4H3.6V9H7v11.4z"/></svg>
+        </div>
+        <div>
+          <h4>LinkedIn</h4>
+          <p>Chaitanya Dussa</p>
+        </div>
+        <span class="contact-arrow">↗</span>
+      </a>
+      <a class="contact-card reveal" href="https://github.com/ChaitanyaDussa" target="_blank" rel="noopener" id="giGithub">
+        <div class="contact-ico">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.8 5.4.8 11.6c0 4.9 3.2 9.1 7.6 10.6.6.1.8-.2.8-.6v-2.2c-3.1.7-3.7-1.3-3.7-1.3-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.6.1-.6 1.1.1 1.7 1.1 1.7 1.1 1 1.7 2.6 1.2 3.2.9.1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.3-5.1-5.5 0-1.2.4-2.2 1.1-3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.1 1.1.9-.2 1.9-.4 2.9-.4s2 .1 2.9.4c2.1-1.4 3.1-1.1 3.1-1.1.6 1.6.2 2.8.1 3.1.7.8 1.1 1.8 1.1 3 0 4.3-2.6 5.2-5.1 5.5.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.4-1.5 7.6-5.7 7.6-10.6C23.2 5.4 18.3.5 12 .5z"/></svg>
+        </div>
+        <div>
+          <h4>GitHub</h4>
+          <p>ChaitanyaDussa</p>
+        </div>
+        <span class="contact-arrow">↗</span>
+      </a>
+      <a class="contact-card reveal" href="mailto:dussachaitanya@gmail.com" id="giEmail">
+        <div class="contact-ico">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+        </div>
+        <div>
+          <h4>Email</h4>
+          <p id="giEmailText">dussachaitanya@gmail.com</p>
+        </div>
+        <span class="contact-arrow">↗</span>
+      </a>
+      <div id="giExtraLinks" style="display:contents;"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <p>&copy; <span id="year"></span> Chaitanya Dussa</p>
+    <div class="footer-icons">
+      <a href="mailto:dussachaitanya@gmail.com" aria-label="Email" id="footerEmail">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M3 6l9 7 9-7"/></svg>
+      </a>
+      <a href="tel:+917032883832" aria-label="Phone" id="footerPhone">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.5 2.4.8 3.6.8.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.3.3 2.5.8 3.6.1.3.1.7-.2 1l-2.2 2.2z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/chaitanya-dussa-fullstackdevelopment/" target="_blank" rel="noopener" aria-label="LinkedIn" id="footerLinkedin">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4A2 2 0 1 1 5.3 3.4a2 2 0 0 1 0 4zM7 20.4H3.6V9H7v11.4z"/></svg>
+      </a>
+      <a href="https://github.com/ChaitanyaDussa" target="_blank" rel="noopener" aria-label="GitHub" id="footerGithub">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.8 5.4.8 11.6c0 4.9 3.2 9.1 7.6 10.6.6.1.8-.2.8-.6v-2.2c-3.1.7-3.7-1.3-3.7-1.3-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.6.1-.6 1.1.1 1.7 1.1 1.7 1.1 1 1.7 2.6 1.2 3.2.9.1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.3-5.1-5.5 0-1.2.4-2.2 1.1-3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.1 1.1.9-.2 1.9-.4 2.9-.4s2 .1 2.9.4c2.1-1.4 3.1-1.1 3.1-1.1.6 1.6.2 2.8.1 3.1.7.8 1.1 1.8 1.1 3 0 4.3-2.6 5.2-5.1 5.5.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.4-1.5 7.6-5.7 7.6-10.6C23.2 5.4 18.3.5 12 .5z"/></svg>
+      </a>
+      <a href="https://leetcode.com/u/ChaitanyaDussa/" target="_blank" rel="noopener" aria-label="LeetCode" id="footerLeetcode">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l-4-4 4-4M10 18l-4-4 4-4"/></svg>
+      </a>
+    </div>
+    <p>Built with HTML, CSS &amp; JS</p>
+  </div>
+</footer>
+
+<!--
+  INTRO VIDEO HOOK
+  Once you have a recorded/avatar intro video, drop the file into this
+  folder (e.g. "intro.mp4") and add this markup at the top of the hero,
+  inside .avatar-wrap, replacing the static <img>:
+
+  <video src="intro.mp4" poster="avatar.png" controls
+         style="width:100%;height:100%;border-radius:50%;object-fit:cover;"></video>
+-->
+
+<!-- ADMIN: MANAGE CONTENT MODAL -->
+<div class="modal-overlay" id="adminOverlay">
+  <div class="modal-box">
+    <button class="modal-close" id="adminClose" aria-label="Close">&times;</button>
+    <div id="adminGate">
+      <h3>Admin access</h3>
+      <p class="note">This is a casual password gate, not real security — anyone can view the page source and read the password. It just keeps random visitors from editing content.</p>
+      <div class="field">
+        <label for="adminPass">Password</label>
+        <input type="password" id="adminPass" placeholder="Enter password">
+      </div>
+      <button class="btn primary" id="adminUnlock" type="button">Unlock</button>
+      <p class="form-status" id="adminError"></p>
+    </div>
+    <div id="adminPanel" style="display:none;">
+      <h3>Manage content</h3>
+      <p class="note">Changes save only in this browser/device — visitors elsewhere won't see them. Use "Export JSON" to grab the data, paste it into the matching array in the page source, and redeploy to make it permanent for everyone.</p>
+
+      <div class="admin-tabs" id="adminTabs">
+        <button class="admin-tab active" data-tab="projects" type="button">Projects</button>
+        <button class="admin-tab" data-tab="skills" type="button">Skills</button>
+        <button class="admin-tab" data-tab="certs" type="button">Certifications</button>
+        <button class="admin-tab" data-tab="videos" type="button">Videos</button>
+        <button class="admin-tab" data-tab="about" type="button">About</button>
+        <button class="admin-tab" data-tab="education" type="button">Education</button>
+        <button class="admin-tab" data-tab="terminal" type="button">Terminal</button>
+        <button class="admin-tab" data-tab="contactinfo" type="button">Contact Info</button>
+        <button class="admin-tab" data-tab="avatar" type="button">Avatar</button>
+        <button class="admin-tab" data-tab="security" type="button">Security</button>
+      </div>
+
+      <!-- PROJECTS TAB -->
+      <div class="admin-tab-panel" id="tabProjects">
+        <div class="field">
+          <label for="pTitle">Title</label>
+          <input type="text" id="pTitle" placeholder="Project name">
+        </div>
+        <div class="field">
+          <label for="pCategory">Category</label>
+          <select id="pCategory"></select>
+        </div>
+
+        <details class="admin-subsection">
+          <summary>Manage categories</summary>
+          <div class="field" style="margin-top:12px;">
+            <label for="newCategoryInput">Add a new category</label>
+            <div style="display:flex;gap:8px;">
+              <input type="text" id="newCategoryInput" placeholder="e.g. Mobile Apps" style="flex:1;">
+              <button class="btn ghost" id="addCategoryBtn" type="button" style="flex-shrink:0;">Add</button>
+            </div>
+          </div>
+          <div class="admin-projects-list" id="adminCategoriesList" style="margin-top:10px;"></div>
+          <p class="note" style="margin-top:8px;">Removing a category doesn't delete projects using it — they'll just stop appearing under that filter tab and still show under "All".</p>
+        </details>
+        <div class="field">
+          <label for="pTags">Tech tags (comma separated)</label>
+          <input type="text" id="pTags" placeholder="n8n, OpenAI API, Webhooks">
+        </div>
+        <div class="field">
+          <label for="pBullets">Highlights (one per line)</label>
+          <textarea id="pBullets" placeholder="Built an automated workflow that...&#10;Connected it to...&#10;Reduced manual work by..."></textarea>
+        </div>
+        <div class="field">
+          <label for="pDemo">Live demo URL (optional)</label>
+          <input type="text" id="pDemo" placeholder="https://...">
+        </div>
+        <div class="field">
+          <label for="pSource">Source code URL (optional)</label>
+          <input type="text" id="pSource" placeholder="https://github.com/...">
+        </div>
+        <div class="modal-actions">
+          <button class="btn primary" id="addProjectBtn" type="button">Add project</button>
+          <button class="btn ghost" id="exportProjectsBtn" type="button">Export JSON</button>
+        </div>
+        <textarea class="export-box" id="exportBoxProjects" style="display:none;" readonly></textarea>
+        <div class="admin-projects-list" id="adminProjectsList"></div>
+      </div>
+
+      <!-- SKILLS TAB -->
+      <div class="admin-tab-panel" id="tabSkills" style="display:none;">
+        <div class="field">
+          <label for="sGroup">Group (existing or new name)</label>
+          <input type="text" id="sGroup" placeholder="e.g. Languages, or a new group like Testing">
+        </div>
+        <div class="field">
+          <label for="sName">Skill name</label>
+          <input type="text" id="sName" placeholder="e.g. TypeScript">
+        </div>
+        <div class="field">
+          <label for="sDesc">Description (optional, a few lines)</label>
+          <textarea id="sDesc" style="min-height:80px;" placeholder="What you've done with this skill, how confident you are, etc."></textarea>
+        </div>
+        <div class="field">
+          <label>Links (optional — add as many as you like, each needs a title)</label>
+          <div class="link-row-editor" id="sLinksEditor"></div>
+          <button class="btn ghost" id="addSkillLinkRowBtn" type="button" style="margin-top:8px;">+ Add link</button>
+        </div>
+        <div class="modal-actions">
+          <button class="btn primary" id="addSkillBtn" type="button">Add skill</button>
+          <button class="btn ghost" id="exportSkillsBtn" type="button">Export JSON</button>
+        </div>
+        <textarea class="export-box" id="exportBoxSkills" style="display:none;" readonly></textarea>
+        <div class="admin-projects-list" id="adminSkillsList"></div>
+      </div>
+
+      <!-- CERTIFICATIONS TAB -->
+      <div class="admin-tab-panel" id="tabCerts" style="display:none;">
+        <div class="field">
+          <label for="cTitle">Certificate name</label>
+          <input type="text" id="cTitle" placeholder="e.g. AWS Cloud Practitioner">
+        </div>
+        <div class="field">
+          <label for="cSubtitle">Short description</label>
+          <input type="text" id="cSubtitle" placeholder="e.g. Cloud fundamentals & core services">
+        </div>
+        <div class="field">
+          <label for="cIcon">Icon (any emoji)</label>
+          <input type="text" id="cIcon" placeholder="🎓" maxlength="4">
+        </div>
+        <div class="field">
+          <label for="cUrl">Certificate verification URL</label>
+          <input type="text" id="cUrl" placeholder="https://...">
+        </div>
+        <div class="modal-actions">
+          <button class="btn primary" id="addCertBtn" type="button">Add certificate</button>
+          <button class="btn ghost" id="exportCertsBtn" type="button">Export JSON</button>
+        </div>
+        <textarea class="export-box" id="exportBoxCerts" style="display:none;" readonly></textarea>
+        <div class="admin-projects-list" id="adminCertsList"></div>
+      </div>
+
+      <!-- VIDEOS TAB -->
+      <div class="admin-tab-panel" id="tabVideos" style="display:none;">
+        <div class="field">
+          <label for="vTitle">Video title</label>
+          <input type="text" id="vTitle" placeholder="e.g. Building a chat app with Socket.io">
+        </div>
+        <div class="field">
+          <label for="vUrl">YouTube URL</label>
+          <input type="text" id="vUrl" placeholder="https://www.youtube.com/watch?v=...">
+        </div>
+        <div class="field">
+          <label for="vDesc">Description (optional)</label>
+          <textarea id="vDesc" style="min-height:70px;" placeholder="What this video covers..."></textarea>
+        </div>
+        <div class="field">
+          <label>Related links (optional — e.g. source code, blog post)</label>
+          <div class="link-row-editor" id="vLinksEditor"></div>
+          <button class="btn ghost" id="addVideoLinkRowBtn" type="button" style="margin-top:8px;">+ Add link</button>
+        </div>
+        <div class="modal-actions">
+          <button class="btn primary" id="addVideoBtn" type="button">Add video</button>
+          <button class="btn ghost" id="exportVideosBtn" type="button">Export JSON</button>
+        </div>
+        <p class="form-status" id="videoError"></p>
+        <textarea class="export-box" id="exportBoxVideos" style="display:none;" readonly></textarea>
+        <div class="admin-projects-list" id="adminVideosList"></div>
+      </div>
+
+      <!-- ABOUT TAB -->
+      <div class="admin-tab-panel" id="tabAbout" style="display:none;">
+        <p class="note">Changes apply instantly and are saved in this browser — redeploy to make them permanent for all visitors.</p>
+        <div class="field">
+          <label for="aboutName">Name (in hero heading)</label>
+          <input type="text" id="aboutName" placeholder="e.g. Chaitanya Dussa">
+        </div>
+        <div class="field">
+          <label for="aboutTagline">Accent tagline</label>
+          <input type="text" id="aboutTagline" placeholder="e.g. builds full-stack products.">
+        </div>
+        <div class="field">
+          <label for="aboutEyebrow">Status badge text</label>
+          <input type="text" id="aboutEyebrow" placeholder="e.g. Available for opportunities">
+        </div>
+        <div class="field">
+          <label for="aboutLead">Bio paragraph</label>
+          <textarea id="aboutLead" style="min-height:110px;" placeholder="Your introduction paragraph..."></textarea>
+        </div>
+        <div class="modal-actions">
+          <button class="btn primary" id="saveAboutBtn" type="button">Save changes</button>
+          <button class="btn ghost" id="resetAboutBtn" type="button">Reset to default</button>
+        </div>
+        <p class="form-status" id="aboutStatus"></p>
+      </div>
+
+      <!-- EDUCATION TAB -->
+      <div class="admin-tab-panel" id="tabEducation" style="display:none;">
+        <p class="note">Add as many education entries as you like — they're automatically sorted by start year, most recent first. Leave "End year" blank or type "Present" for a degree you're currently pursuing.</p>
+        <div class="field">
+          <label for="eduTitleInput">Degree / course</label>
+          <input type="text" id="eduTitleInput" placeholder="e.g. B.Tech in Computer Science">
+        </div>
+        <div class="field">
+          <label for="eduDescInput">Institution &amp; detail</label>
+          <textarea id="eduDescInput" style="min-height:70px;" placeholder="e.g. Andhra Loyola Institute of Engineering and Technology — 8.0 CGPA"></textarea>
+        </div>
+        <div style="display:flex;gap:12px;">
+          <div class="field" style="flex:1;">
+            <label for="eduStartInput">Start year</label>
+            <input type="text" id="eduStartInput" placeholder="e.g. 2023">
+          </div>
+          <div class="field" style="flex:1;">
+            <label for="eduEndInput">End year (or "Present")</label>
+            <input type="text" id="eduEndInput" placeholder="e.g. 2027 or Present">
+          </div>
+        </div>
+        <div class="modal-actions">
+          <button class="btn primary" id="addEduBtn" type="button">Add education</button>
+          <button class="btn ghost" id="exportEduBtn" type="button">Export JSON</button>
+        </div>
+        <textarea class="export-box" id="exportBoxEdu" style="display:none;" readonly></textarea>
+        <div class="admin-projects-list" id="adminEduList"></div>
+      </div>
+
+      <!-- TERMINAL TAB -->
+      <div class="admin-tab-panel" id="tabTerminal" style="display:none;">
+        <p class="note">Edit the lines that type out in the terminal card. Each line is a command or output. Changes replay the animation instantly.</p>
+
+        <div id="terminalLinesEditor" style="display:flex;flex-direction:column;gap:10px;margin-bottom:16px;"></div>
+
+        <button class="btn ghost" id="addTerminalLineBtn" type="button" style="width:100%;border-style:dashed;margin-bottom:16px;">+ Add line</button>
+
+        <div class="modal-actions">
+          <button class="btn primary" id="saveTerminalBtn" type="button">Save &amp; replay</button>
+          <button class="btn ghost" id="resetTerminalBtn" type="button">Reset to default</button>
+        </div>
+        <p class="form-status" id="terminalStatus"></p>
+      </div>
+
+      <!-- CONTACT INFO TAB -->
+      <div class="admin-tab-panel" id="tabContactInfo" style="display:none;">
+        <p class="note">
+          One place to update your email, phone, social links, and resume link — this feeds both the
+          footer and the "Get in Touch" section automatically, so you only edit it once.
+        </p>
+        <div class="field">
+          <label for="ciEmail">Email address</label>
+          <input type="text" id="ciEmail" placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="ciPhone">Phone (used for tel: link in footer)</label>
+          <input type="text" id="ciPhone" placeholder="+91 70328 83832">
+        </div>
+        <div class="field">
+          <label for="ciLinkedin">LinkedIn URL</label>
+          <input type="text" id="ciLinkedin" placeholder="https://www.linkedin.com/in/...">
+        </div>
+        <div class="field">
+          <label for="ciGithub">GitHub URL</label>
+          <input type="text" id="ciGithub" placeholder="https://github.com/...">
+        </div>
+        <div class="field">
+          <label for="ciLeetcode">LeetCode URL</label>
+          <input type="text" id="ciLeetcode" placeholder="https://leetcode.com/u/...">
+        </div>
+        <div class="field">
+          <label for="ciResume">Resume link (Google Drive "view" link, or any URL)</label>
+          <input type="text" id="ciResume" placeholder="https://drive.google.com/file/d/.../view">
+        </div>
+
+        <details class="admin-subsection">
+          <summary>Additional links (for anything not covered above)</summary>
+          <p class="note" style="margin-top:10px;">
+            Add any future platform or link — Twitter, Instagram, a second portfolio, Discord, whatever
+            comes up. Each one shows up as its own extra card in the "Get in Touch" section.
+          </p>
+          <div class="field">
+            <label for="ciExtraLabel">Label</label>
+            <input type="text" id="ciExtraLabel" placeholder="e.g. Twitter">
+          </div>
+          <div class="field">
+            <label for="ciExtraUrl">URL</label>
+            <input type="text" id="ciExtraUrl" placeholder="https://...">
+          </div>
+          <button class="btn ghost" id="addExtraLinkBtn" type="button">Add link</button>
+          <div class="admin-projects-list" id="adminExtraLinksList" style="margin-top:14px;"></div>
+        </details>
+
+        <div class="modal-actions">
+          <button class="btn primary" id="saveContactInfoBtn" type="button">Save changes</button>
+          <button class="btn ghost" id="resetContactInfoBtn" type="button">Reset to default</button>
+          <button class="btn ghost" id="exportContactInfoBtn" type="button">Export JSON</button>
+        </div>
+        <p class="form-status" id="contactInfoStatus"></p>
+        <textarea class="export-box" id="exportBoxContactInfo" style="display:none;" readonly></textarea>
+      </div>
+
+      <!-- AVATAR TAB -->
+      <div class="admin-tab-panel" id="tabAvatar" style="display:none;">
+        <p class="note">
+          Upload a new photo to preview it instantly across the site (navbar + hero). This only applies
+          in this browser — to make it permanent for everyone, replace the actual <code>avatar.png</code>
+          file in your project folder with the new image and redeploy. Keep uploads under ~1.5MB for
+          reliable saving.
+        </p>
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+          <img id="avatarPreview" src="avatar.png" alt="Avatar preview" style="width:72px;height:72px;border-radius:50%;object-fit:cover;border:1px solid var(--line);">
+          <div style="flex:1;">
+            <input type="file" id="avatarFileInput" accept="image/*" style="font-family:'JetBrains Mono',monospace;font-size:0.78rem;color:var(--text-muted);">
+          </div>
+        </div>
+        <div class="modal-actions">
+          <button class="btn primary" id="applyAvatarBtn" type="button">Apply new avatar</button>
+          <button class="btn ghost" id="resetAvatarBtn" type="button">Reset to default</button>
+        </div>
+        <p class="form-status" id="avatarStatus"></p>
+      </div>
+
+      <!-- SECURITY TAB -->
+      <div class="admin-tab-panel" id="tabSecurity" style="display:none;">
+        <p class="note">
+          Set your own admin password here — it's stored as a SHA-256 hash, not plain text, so it isn't
+          readable at a glance in page source. This still isn't real server-side security (there's no
+          backend), but it means you don't need to ask anyone to edit the source code to change it.
+        </p>
+
+        <div id="securityStatusLine" style="font-family:'JetBrains Mono',monospace;font-size:0.78rem;color:var(--text-faint);margin-bottom:18px;padding:10px 14px;border:1px solid var(--line);border-radius:8px;background:var(--bg-panel-2);"></div>
+
+        <div class="field">
+          <label for="newAdminPass">New password</label>
+          <input type="password" id="newAdminPass" placeholder="Enter a new password">
+        </div>
+        <div class="field">
+          <label for="confirmAdminPass">Confirm new password</label>
+          <input type="password" id="confirmAdminPass" placeholder="Type it again">
+        </div>
+
+        <div class="modal-actions">
+          <button class="btn primary" id="savePasswordBtn" type="button">Save new password</button>
+          <button class="btn ghost" id="resetPasswordBtn" type="button">Reset to original</button>
+        </div>
+        <p class="form-status" id="securityStatus"></p>
+
+        <p class="note" style="margin-top:20px;">
+          This new password only applies in <em>this browser, on this device</em> — same as the rest of
+          the admin panel. To make it the permanent password for everyone (including you, on other
+          devices), copy the hash below and paste it in place of <code>DEFAULT_ADMIN_HASH</code> in the
+          page's source code, then redeploy.
+        </p>
+
+      </div>
+
+      <div class="modal-actions" style="margin-top:18px; border-top:1px solid var(--line); padding-top:16px;">
+        <button class="btn ghost" id="adminLockBtn" type="button">Lock</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHATBOT WIDGET -->
+<button class="chat-fab" id="chatFab" aria-label="Ask about Chaitanya">💬</button>
+<div class="chat-panel" id="chatPanel">
+  <div class="chat-head" id="chatHead">
+    <div>
+      <h4>Ask about Chaitanya</h4>
+      <small>Automated FAQ assistant, not a live person</small>
+    </div>
+    <span class="chat-drag-hint" id="chatDragHint" title="Drag to move" aria-hidden="true">⠿</span>
+    <button class="chat-mute" id="chatMute" aria-label="Mute voice" title="Mute voice">🔊</button>
+  </div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chat-input-row">
+    <input type="text" id="chatInput" placeholder="Ask a question...">
+    <button id="chatSend" type="button">Send</button>
+  </div>
+</div>
+
+
+
+<!-- THEME ENGINE -->
+<button class="theme-fab" id="themeFab" aria-label="Change theme" title="Change theme">🎨</button>
+<div class="theme-panel" id="themePanel" aria-label="Theme picker" role="dialog" hidden>
+  <div class="theme-panel-head">
+    <span>Choose a theme</span>
+    <button class="theme-close" id="themeClose" aria-label="Close theme picker">✕</button>
+  </div>
+  <div class="theme-grid" id="themeGrid"></div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
