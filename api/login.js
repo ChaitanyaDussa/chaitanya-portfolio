@@ -8,6 +8,15 @@ const crypto = require('crypto');
 const DEFAULT_HASH = '26c5e113951dea22a6a66c152b7838fcb1792d08b7386b59b0fc92f06f3fccba';
 
 module.exports = async (req, res) => {
+  if (req.method === 'GET') {
+    // Diagnostic only — booleans, never the actual values.
+    res.status(200).json({
+      diagnostic: true,
+      POSTGRES_URL_set: !!(process.env.POSTGRES_URL || process.env.DATABASE_URL),
+      ADMIN_TOKEN_SECRET_set: !!process.env.ADMIN_TOKEN_SECRET
+    });
+    return;
+  }
   if (req.method !== 'POST') {
     res.status(405).json({ error: 'Method not allowed' });
     return;
